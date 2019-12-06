@@ -1,0 +1,2 @@
+<app-data-table [data]="personen" [min]="index.min" [max]="index.max"></app-data-table>
+<app-pagination (indexSelected)="onIndexSelected($event)" [dataLength]="personen.length"></app-pagination>

@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <td>{{data[0].name}}</td>
+      <td>{{data[0].age}}</td>
+      <td>{{data[0].address}}</td>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let item of data;index as i">
+      <tr *ngIf="i > 0 && i >= min && i <= max">
+        <td>{{item.name}}</td>
+        <td>{{item.age}}</td>
+        <td>{{item.address}}</td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
